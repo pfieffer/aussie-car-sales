@@ -20,7 +20,6 @@ html {
 
     /* color: light-dark --var(), #efefec); */
     background-color: light-dark(var(--light), var(--dark));
-    /* padding-top: 60px; */
 }
 
 .navbar {
@@ -135,4 +134,60 @@ html {
 .hero-text button:hover {
     background-color: #555;
     color: white;
+}
+
+.gradient-heading {
+    background: linear-gradient(45deg, var(--banana) 0%, var(--plum) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.container {
+    padding-top: 60px;
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+.service-card {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    background: linear-gradient(var(--light), var(--light)) padding-box,
+        linear-gradient(45deg, var(--banana) 0%, var(--plum) 100%) border-box;
+    border: solid 2px transparent;
+    border-radius: 8px;
+}
+
+.service-card-content {
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    display: inline-block;
+    font: var(--p);
+    color: var(--light);
+    background: linear-gradient(var(--dark), var(--dark)) padding-box,
+        linear-gradient(45deg, var(--banana) 0%, var(--plum) 100%) border-box;
+    border: solid 2px transparent;
+    border-radius: 8px;
+    padding: 12px 24px;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    margin-top: 8px;
+
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: var(--plum);
+    color: white;
+
+    a {
+        color: var(--banana);
+    }
 }
