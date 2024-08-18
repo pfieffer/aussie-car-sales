@@ -149,12 +149,12 @@ html {
 }
 
 .service-card {
-    max-width: 600px;
+    max-width: 60%;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
     overflow: hidden;
-    background: linear-gradient(var(--light), var(--light)) padding-box,
+    background: linear-gradient(light-dark(var(--light), var(--dark)), light-dark(var(--light), var(--dark))) padding-box,
         linear-gradient(45deg, var(--banana) 0%, var(--plum) 100%) border-box;
     border: solid 2px transparent;
     border-radius: 8px;
