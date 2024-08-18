@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* colors */
+    --gray10: hsl(0, 0%, 10%);
+    --gray30: hsl(0, 0%, 30%);
+    --gray50: hsl(0, 0%, 50%);
+    --gray70: hsl(0, 0%, 70%);
+    --gray90: hsl(0, 0%, 90%);
+    --colora: #fff59c;
+    --colora2: #572d42;
+
+    /* landing page */
+    --ff: "Poppins", sans-serif;
+    --h1: bold 4rem/1em var(--ff);
+    --h2: bold 3rem/1.2em var(--ff);
+    --h3: bold 2.25rem/1.2em var(--ff);
+    --h4: bold 1.5rem/1.6em var(--ff);
+    --big: 1.25rem/1.6em var(--ff);
+    --p: 1rem/1.6em var(--ff);
+    --small: .75rem/2em var(--ff);
+
+    /* UIs */
+    --h1ui: bold 3rem/1.2em var(--ff);
+    --h2ui: bold 2.25rem/1.2em var(--ff);
+    --h3ui: bold 1.5rem/1.2em var(--ff);
+    --h4ui: bold 1.12rem/1.6em var(--ff);
+    --bigui: 1rem/1.6em var(--ff);
+    --pui: .8rem/1.6em var(--ff);
+    --smallui: .75rem/1.8em var(--ff);
+}
+
+body {
+    font-family: var(--ff);
+    text-wrap: balance;
+    background: var(--gray10);
+    color: var(--gray90);
+}
+
+/* landing page */
+h1 {
+    font: var(--h1);
+}
+
+h2 {
+    font: var(--h2);
+}
+
+h3 {
+    font: var(--h3);
+}
+
+h4 {
+    font: var(--h4);
+}
+
+.big {
+    font: var(--big);
+}
+
+p {
+    font: var(--p);
+}
+
+.small {
+    font: var(--small);
+}
+
+
+/* UIs */
+.ui h1 {
+    font: var(--h1ui);
+}
+
+.ui h2 {
+    font: var(--h2ui);
+}
+
+.ui h3 {
+    font: var(--h3ui);
+}
+
+.ui h4 {
+    font: var(--h4ui);
+}
+
+.ui .big {
+    font: var(--bigui);
+}
+
+.ui p {
+    font: var(--pui);
+}
+
+.ui .small {
+    font: var(--smallui);
+}
+
+
+
+
+.ts {
+    color: var(--gray70);
+}
+
+h1,
+h2,
+h3,
+h4,
+.big,
+p,
+.small {
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.ui {
+    margin-top: 4rem;
+}
