@@ -117,23 +117,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-}
-
-.hero-text button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-}
-
-.hero-text button:hover {
-    background-color: #555;
-    color: white;
+    color: var(--light);
 }
 
 .gradient-heading {
@@ -144,8 +128,9 @@ html {
 
 .container {
     padding-top: 60px;
-    margin-left: 96px;
-    margin-right: 96px;
+    padding-bottom: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .service-card {
@@ -178,14 +163,23 @@ html {
     transition: 0.2s ease-in-out;
     text-align: center;
     margin-top: 8px;
+}
 
+.btn:hover{
+    scale: 1.1;
+    background: linear-gradient(var(--plum), var(--banana)) padding-box,
+        linear-gradient(45deg, var(--banana) 0%, var(--plum) 100%) border-box;
+}
+
+#homepage-mission-statement{
+    text-align: center;
 }
 
 footer {
     text-align: center;
     padding: 3px;
     background-color: var(--plum);
-    color: white;
+    color: var(--light);
 
     a {
         color: var(--banana);
