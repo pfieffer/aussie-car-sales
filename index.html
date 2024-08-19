@@ -1,109 +1,142 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- <meta charset='utf-8'> -->
-    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
-    <title>Aussie Cars</title>
-    <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-  </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#"><img src="images/logo.png" alt="Logo" /></a>
+<head>
+  <!-- <meta charset='utf-8'> -->
+  <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+  <title>Aussie Cars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#"><img src="images/logo.png" alt="Logo" /></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="buy.html">Buy</a></li>
+      <li><a href="#">Sell</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul class="nav-right">
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Aussie Car Sales</h1>
+      <p>
+        Your
+        <span style="text-decoration: underline">one stop solution</span> to
+        buy and sell Cars in Australia
+      </p>
+      <a class="btn" href="buy.html">Search Cars</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <h2>Recent cars</h2>
+
+      <div class="col-4">
+        <div class="car-card" onclick="window.open('car-detail.html', '_self')">
+          <img src="images/mitsubishi-outlander.png" />
+          <h4>2012 Mitsubishi Outlander</h4>
+          <h5>$21,000</h5>
+          <p>Chatswood, NSW</p>
+          <!-- <a href="#" class="details-btn" target="_self">View Details</a> -->
+        </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="buy.html">Buy</a></li>
-        <li><a href="#">Sell</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav-right">
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Sign Up</a></li>
-      </ul>
-    </nav>
 
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1>Aussie Car Sales</h1>
-        <p>Buy Cars in Australia</p>
-        <a class="btn" href="buy.html">Search Cars</a>
+      <div class="col-4">
+        <div class="car-card" onclick="window.open('car-detail.html', '_self')">
+          <img src="images/subaru-outback.png" />
+          <h4>2021 Subaru Outback</h4>
+          <h5>$32,000</h5>
+          <p>Florey, ACT</p>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="car-card" onclick="window.open('car-detail.html', '_self')">
+          <img src="images/mitsubishi-outlander.png" />
+          <h4>2012 Nissan Micra</h4>
+          <h5>$16,000</h5>
+          <p>Casey, ACT</p>
+        </div>
       </div>
     </div>
 
-    <div class="container">
-      <h3 id="homepage-mission-statement">
-        Aussie Car Sales aims to be your <span style="text-decoration: underline;">one stop solution</span> for buying and
-        selling cars in Australia
-      </h3>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quam qui
-        exercitationem sequi repellendus repudiandae omnis impedit architecto
-        quisquam earum voluptates quasi quaerat. Ea sit optio ex culpa atque
-        accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Temporibus quas incidunt expedita eligendi a, impedit debitis natus iste
-        corrupti pariatur cumque, dolorum similique? Nam at corrupti nemo
-        accusantium necessitatibus reiciendis! Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Reprehenderit delectus, assumenda culpa
-        modi temporibus explicabo, dolorum quasi maiores non incidunt
-        praesentium fuga quisquam similique ullam eum laborum ex pariatur
-        necessitatibus.
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quam qui
-        exercitationem sequi repellendus repudiandae omnis impedit architecto
-        quisquam earum voluptates quasi quaerat. Ea sit optio ex culpa atque
-        accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Temporibus quas incidunt expedita eligendi a, impedit debitis natus iste
-        corrupti pariatur cumque, dolorum similique? Nam at corrupti nemo
-        accusantium necessitatibus reiciendis! Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Reprehenderit delectus, assumenda culpa
-        modi temporibus explicabo, dolorum quasi maiores non incidunt
-        praesentium fuga quisquam similique ullam eum laborum ex pariatur
-        necessitatibus.
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quam qui
-        exercitationem sequi repellendus repudiandae omnis impedit architecto
-        quisquam earum voluptates quasi quaerat. Ea sit optio ex culpa atque
-        accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Temporibus quas incidunt expedita eligendi a, impedit debitis natus iste
-        corrupti pariatur cumque, dolorum similique? Nam at corrupti nemo
-        accusantium necessitatibus reiciendis! Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Reprehenderit delectus, assumenda culpa
-        modi temporibus explicabo, dolorum quasi maiores non incidunt
-        praesentium fuga quisquam similique ullam eum laborum ex pariatur
-        necessitatibus.
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quam qui
-        exercitationem sequi repellendus repudiandae omnis impedit architecto
-        quisquam earum voluptates quasi quaerat. Ea sit optio ex culpa atque
-        accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Temporibus quas incidunt expedita eligendi a, impedit debitis natus iste
-        corrupti pariatur cumque, dolorum similique? Nam at corrupti nemo
-        accusantium necessitatibus reiciendis! Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Reprehenderit delectus, assumenda culpa
-        modi temporibus explicabo, dolorum quasi maiores non incidunt
-        praesentium fuga quisquam similique ullam eum laborum ex pariatur
-        necessitatibus.
-      </p>
+    <div class="row" style="text-align: center;">
+      <a href="buy.html" class="btn">
+        Show All
+      </a>
     </div>
 
-    <footer>
-      <p>
-        &copy 2024 Aussie Car Sales<br />
-        <a href="mailto:info@aussiecarsales.com.au"
-          >info@aussiecarsales.com.au</a
-        >
-      </p>
-    </footer>
-  </body>
+    <br>
+    <div class="row">
+      <h2>Looking to Sell?</h2>
+
+      <div class="col-6">
+        <div class="car-card">
+          💰 Get valuation for your car
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="car-card">
+          ✅ List your car for free
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+    <h2>
+      Expert Car reviews
+    </h2>
+
+    <div class="row">
+
+      <div class="col-4">
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/RlMWLyuJrzc"
+          title="This is Nissan’s BEST car!" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="col-4">
+        <iframe width="100%" height="auto"
+          src="https://www.youtube.com/embed/e1r3Ce3129w?list=PLj8xiTIFL1M3gSW1ChcsbZj9E7xvdIhjI"
+          title="Land Rover Defender 2021 in-depth on and off-road REVIEW" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </div>
+
+      <div class="col-4">
+        <iframe width="100%" height="auto"
+          src="https://www.youtube.com/embed/83vPYRIeW5M?list=PLj8xiTIFL1M3gSW1ChcsbZj9E7xvdIhjI"
+          title="Honda CR-V SUV 2020 in-depth review | carwow Reviews" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>
+      &copy 2024 Aussie Car Sales<br />
+      <a href="mailto:info@aussiecarsales.com.au">info@aussiecarsales.com.au</a>
+    </p>
+  </footer>
+</body>
+
 </html>
