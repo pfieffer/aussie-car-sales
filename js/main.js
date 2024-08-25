@@ -27,9 +27,25 @@ function validateSignupFields() {
         alert("Please enter your username");
         return false;
     }
+    if(username == email){
+        alert("Please use a different username than your email")
+        return false
+    }
     if (password == "") {
         alert("Please enter your password");
         return false;
+    }
+
+    const userNameRegex = /^[a-zA-Z]+$/;
+    if(!userNameRegex.test(username)){
+        alert("Username should only contain characters (alphabets). No numbers or special characters are permitted in the username.")
+        return false
+    }
+
+    const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[?$#@])[a-zA-Z\d?$#@]{6,10}$/;
+    if(!passwordRegex.test(password)){
+        alert("The password should be between 6 and 10 characters in length. It must contain a mix of characters (alphabets), numbers, and specific special characters: '?' '$' '#' '@'.")
+        return false
     }
 
     alert("Signup Successful");
@@ -46,6 +62,12 @@ function validateLoginFields() {
     }
     if (password == "") {
         alert("Please enter your password");
+        return false;
+    }
+
+    // dummy login
+    if(username != 'admin' || password !="validpass12#"){
+        alert("Login not successful");
         return false;
     }
 
