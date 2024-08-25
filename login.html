@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="Logo" /></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buy.html">Buy</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav-right">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <form name="loginForm" onsubmit="return validateLoginFields()" id="login-form">
+            <h2>
+                Login to buy and sell cars
+            </h2>
+            <div class="row">
+                <div class="col-30">
+                    <label for="username">Username</label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30">
+                    <label for="password">Password</label>
+                </div>
+                <div class="col-70">
+                    <input type="password" id="password" name="pnumber" placeholder="Password">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <input type="submit" value="Login" class="btn">
+            </div>
+        </form>
+
+        <br>
+
+    </div>
+
+    <footer>
+        <p>
+            &copy 2024 Aussie Car Sales<br />
+            <a href="mailto:info@aussiecarsales.com.au">info@aussiecarsales.com.au</a>
+        </p>
+    </footer>
+</body>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

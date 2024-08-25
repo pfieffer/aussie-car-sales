@@ -4,8 +4,8 @@ function validateSignupFields() {
     let pnumber = document.forms["registrationForm"]["pnumber"].value;
     let email = document.forms["registrationForm"]["email"].value;
     let username = document.forms["registrationForm"]["username"].value;
-    let password = document.forms["registrationForm"]["username"].value;
-    
+    let password = document.forms["registrationForm"]["password"].value;
+
 
     if (fullname == "") {
         alert("Please enter your name");
@@ -31,4 +31,24 @@ function validateSignupFields() {
         alert("Please enter your password");
         return false;
     }
+
+    alert("Signup Successful");
+    return true;
+}
+
+function validateLoginFields() {
+    let username = document.forms["loginForm"]["username"].value;
+    let password = document.forms["loginForm"]["password"].value;
+
+    if (username == "") {
+        alert("Please enter your username");
+        return false;
+    }
+    if (password == "") {
+        alert("Please enter your password");
+        return false;
+    }
+
+    alert("Login Successful");
+    return true;
 }
