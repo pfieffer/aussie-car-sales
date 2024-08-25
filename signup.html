@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="Logo" /></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buy.html">Buy</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav-right">
+            <li><a href="#">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <p>
+            Fill up the form to register an account on Car Sales Australia and enjoy buying and listing cars for free.
+        </p>
+
+        <form name="registrationForm" onsubmit="return validateSignupFields()">
+
+            <div class="row">
+                <div class="col-30">
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="name" name="fullname" placeholder="Your Name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30">
+                    <label for="address">Address</label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="address" name="address" placeholder="Full Address">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30">
+                    <label for="pnumber">Phone Number</label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="pnumber" name="pnumber" placeholder="Phone Number">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-70">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30">
+                    <label for="username">Username</label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30">
+                    <label for="password">Password</label>
+                </div>
+                <div class="col-70">
+                    <input type="password" id="password" name="pnumber" placeholder="Password">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <p>By clciking Register, you understand and agree to the <a href="#">terms and conditions</a> of Car Sales Australia</p>
+                <input type="submit" value="Register" class="btn">
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>
+            &copy 2024 Aussie Car Sales<br />
+            <a href="mailto:info@aussiecarsales.com.au">info@aussiecarsales.com.au</a>
+        </p>
+    </footer>
+</body>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

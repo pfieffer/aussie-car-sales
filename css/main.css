@@ -202,7 +202,7 @@ img {
 }
 
 .container {
-  padding-top: 60px;
+  padding-top: 74px;
   padding-bottom: 60px;
   margin-left: 5%;
   margin-right: 5%;
@@ -281,7 +281,7 @@ img {
   text-align: center;
 }
 
-input[type=text] {
+input[type="text"] {
   width: 100%;
   box-sizing: border-box;
   border: 2px solid light-dark(var(--dark), var(--light));
@@ -289,6 +289,74 @@ input[type=text] {
   font-size: 16px;
   background-color: light-dark(var(--light), var(--dark));
   padding: 12px 20px 12px 40px;
+}
+
+input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid light-dark(var(--dark), var(--light));
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: light-dark(var(--light), var(--dark));
+  padding: 12px 20px 12px 40px;
+}
+
+input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid light-dark(var(--dark), var(--light));
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: light-dark(var(--light), var(--dark));
+  padding: 12px 20px 12px 40px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* input[type="submit"] {
+  background-color: var(--plum);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+} */
+
+input[type="submit"]:hover {
+  background-color: var(--banana);
+}
+
+.col-30 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-30,
+  .col-70,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 footer {
