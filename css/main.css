@@ -321,6 +321,16 @@ input[type="password"] {
   padding: 12px 20px 12px 40px;
 }
 
+input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid light-dark(var(--dark), var(--light));
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: light-dark(var(--light), var(--dark));
+  padding: 12px 20px 12px 40px;
+}
+
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;

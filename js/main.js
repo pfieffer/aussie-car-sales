@@ -69,11 +69,55 @@ function validateLoginFields() {
 
     // dummy login
     if(username != 'admin' || password !="validpass12#"){
-        alert("Login not successful");
+        alert("Login not successful. Please check your username and/or password");
         return false;
     }
 
     alert("Login Successful. You can now list your car for sale");
     window.location.href = 'addcar.html';
     return true;
+}
+
+function validateAddCarForm(){
+    let make = document.getElementById("make").value;
+    let model = document.getElementById("model").value;
+    let year = document.getElementById("year").value;
+    let milage = document.getElementById("milage").value;
+    let location = document.getElementById("location").value;
+
+    if(make == ''){
+        alert("Please enter the car make");
+        return false
+    }
+    if(model == ''){
+        alert("Please enter the car model name");
+        return false
+    }
+    if(year == ''){
+        alert("Please enter the car year");
+        return false
+    }
+    if(year.length != 4){
+        alert("Please enter a valid year");
+        return false
+    }
+    if(year == ''){
+        alert("Please enter the car year");
+        return false
+    }
+    if(milage == ''){
+        alert("Please enter the kilometers on your car");
+        return false
+    }
+    if(location == ''){
+        alert("Please enter the location");
+        return false
+    }
+    if(price == ''){
+        alert("Please enter the price");
+        return false
+    }
+
+    alert('Car listed successfully. 🎉');
+    return true
 }

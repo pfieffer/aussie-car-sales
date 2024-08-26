@@ -29,7 +29,7 @@
 
       <div class="container">
 
-        <form name="addCarForm" onsubmit="return validateAddCar()" id="login-form">
+        <form name="addCarForm" onsubmit="return validateAddCarForm()" id="login-form">
             <h2>
                 List car for sale
             </h2>
@@ -38,7 +38,7 @@
                     <label for="make">Make</label>
                 </div>
                 <div class="col-70">
-                    <input type="text" id="make" name="make" placeholder="2007">
+                    <input type="text" id="make" name="make" placeholder="Toyota">
                 </div>
             </div>
 
@@ -47,7 +47,16 @@
                     <label for="model">Model</label>
                 </div>
                 <div class="col-70">
-                    <input type="text" id="model" name="model" placeholder="Model">
+                    <input type="text" id="model" name="model" placeholder="Hilux">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-30">
+                    <label for="year">Year</label>
+                </div>
+                <div class="col-70">
+                    <input type="number" id="year" name="year" placeholder="2007">
                 </div>
             </div>
 
@@ -56,7 +65,7 @@
                     <label for="milage">Milage</label>
                 </div>
                 <div class="col-70">
-                    <input type="text" id="milage" name="milage" placeholder="Milage">
+                    <input type="number" id="milage" name="milage" placeholder="12000 km">
                 </div>
             </div>
 
@@ -65,7 +74,7 @@
                     <label for="location">Location</label>
                 </div>
                 <div class="col-70">
-                    <input type="text" id="location" name="location" placeholder="Location">
+                    <input type="text" id="location" name="location" placeholder="Gungahlin, ACT">
                 </div>
             </div>
 
@@ -74,7 +83,7 @@
                     <label for="price">Price</label>
                 </div>
                 <div class="col-70">
-                    <input type="text" id="price" name="price" placeholder="$19000">
+                    <input type="number" id="price" name="price" placeholder="$49000">
                 </div>
             </div>
 
