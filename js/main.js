@@ -53,6 +53,8 @@ function validateSignupFields() {
 }
 
 function validateLoginFields() {
+    event.preventDefault(); // prevent form submission
+
     let username = document.forms["loginForm"]["username"].value;
     let password = document.forms["loginForm"]["password"].value;
 
@@ -71,6 +73,7 @@ function validateLoginFields() {
         return false;
     }
 
-    alert("Login Successful");
+    alert("Login Successful. You can now list your car for sale");
+    window.location.href = 'addcar.html';
     return true;
 }
