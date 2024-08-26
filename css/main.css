@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/*
+ Setting root and body level styling.
+Defining consistem font family, light dark theme support and
+main color variables
+ */
 :root {
   --ff: "Poppins", sans-serif;
 
@@ -24,6 +29,10 @@ html {
   background-color: light-dark(var(--light), var(--dark));
 }
 
+/* 
+Responsive layout system
+Handling images and enforcing a row and column system 
+*/
 img {
   max-width: 100%;
   height: auto;
@@ -97,6 +106,28 @@ img {
   padding: 15px;
 }
 
+ /* 
+ A 30-70 system for forms, so that they stack on top of each other in small width window
+ The stacking is handle by @media query below
+ */
+.col-30 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -158,23 +189,6 @@ img {
   background-color: light-dark(var(--plum), var(--banana));
   color: light-dark(var(--light), var(--dark));
   border-radius: 4px;
-}
-
-@media screen and (max-width: 800px) {
-  .navbar {
-    flex-wrap: wrap;
-  }
-
-  .navbar .nav-links,
-  .navbar .nav-right {
-    flex-basis: 100%;
-    justify-content: center;
-  }
-
-  .navbar .nav-links,
-  .navbar .nav-right li {
-    margin: 5px 0;
-  }
 }
 
 .hero-image {
@@ -242,20 +256,6 @@ img {
   border: solid 2px transparent;
 }
 
-.details-btn {
-  display: inline-block;
-  text-decoration: none;
-  display: inline-block;
-  font: var(--p);
-  color: light-dark(var(--light), var(--dark));
-  background-color: light-dark(var(--dark), var(--light));
-  border: solid 2px transparent;
-  border-radius: 8px;
-  padding: 8px 12px;
-  text-align: center;
-  margin-top: 8px;
-}
-
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -282,6 +282,7 @@ img {
   text-align: center;
 }
 
+/* Styling input elements */
 input[type="text"] {
   width: 100%;
   box-sizing: border-box;
@@ -341,26 +342,22 @@ input[type="submit"]:hover {
   background-color: var(--banana);
 }
 
-.col-30 {
-  float: left;
-  width: 30%;
-  margin-top: 6px;
+/* Footer style */
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: var(--plum);
+  color: var(--light);
+
+  a {
+    color: var(--banana);
+  }
 }
 
-.col-70 {
-  float: left;
-  width: 70%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout 
+- when the screen is less than 600px wide, 
+make the two columns stack on top of each other instead of next to each other
+ */
 @media screen and (max-width: 1000px) {
   .col-30,
   .col-70,
@@ -387,13 +384,22 @@ input[type="submit"]:hover {
   }
 }
 
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: var(--plum);
-  color: var(--light);
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
 
-  a {
-    color: var(--banana);
+  .navbar .nav-links,
+  .navbar .nav-right {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .navbar .nav-links,
+  .navbar .nav-right li {
+    margin: 5px 0;
+  }
+  .container{
+    padding-top: 150px;
   }
 }
