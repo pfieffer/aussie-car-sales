@@ -27,7 +27,7 @@ function validateSignupFields() {
         alert("Please enter your username");
         return false;
     }
-    if(username == email){
+    if (username == email) {
         alert("Please use a different username than your email")
         return false
     }
@@ -37,13 +37,13 @@ function validateSignupFields() {
     }
 
     const userNameRegex = /^[a-zA-Z]+$/;
-    if(!userNameRegex.test(username)){
+    if (!userNameRegex.test(username)) {
         alert("Username should only contain characters (alphabets). No numbers or special characters are permitted in the username.")
         return false
     }
 
     const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[?$#@])[a-zA-Z\d?$#@]{6,10}$/;
-    if(!passwordRegex.test(password)){
+    if (!passwordRegex.test(password)) {
         alert("The password should be between 6 and 10 characters in length. It must contain a mix of characters (alphabets), numbers, and specific special characters: '?' '$' '#' '@'.")
         return false
     }
@@ -68,7 +68,7 @@ function validateLoginFields() {
     }
 
     // dummy login
-    if(username != 'admin' || password !="validpass12#"){
+    if (username != 'admin' || password != "validpass12#") {
         alert("Login not successful. Please check your username and/or password");
         return false;
     }
@@ -78,46 +78,60 @@ function validateLoginFields() {
     return true;
 }
 
-function validateAddCarForm(){
+function validateAddCarForm() {
     let make = document.getElementById("make").value;
     let model = document.getElementById("model").value;
     let year = document.getElementById("year").value;
     let milage = document.getElementById("milage").value;
     let location = document.getElementById("location").value;
 
-    if(make == ''){
+    if (make == '') {
         alert("Please enter the car make");
         return false
     }
-    if(model == ''){
+    if (model == '') {
         alert("Please enter the car model name");
         return false
     }
-    if(year == ''){
+    if (year == '') {
         alert("Please enter the car year");
         return false
     }
-    if(year.length != 4){
+    if (year.length != 4) {
         alert("Please enter a valid year");
         return false
     }
-    if(year == ''){
+    if (year == '') {
         alert("Please enter the car year");
         return false
     }
-    if(milage == ''){
+    if (milage == '') {
         alert("Please enter the kilometers on your car");
         return false
     }
-    if(location == ''){
+    if (location == '') {
         alert("Please enter the location");
         return false
     }
-    if(price == ''){
+    if (price == '') {
         alert("Please enter the price");
         return false
     }
 
     alert('Car listed successfully. 🎉');
     return true
+}
+
+
+function validateSearchCarForm() {
+    let searchKeyword = document.getElementById("searchKeyword").value;
+    let location = document.getElementById("searchLocation").value
+
+    if (searchKeyword == '' && location == '') {
+        alert("Please enter a search keyword and/or location");
+        return false;
+    }
+
+    alert("Valid. Filter the car list based on search keyword and/or location")
+    return true;
 }

@@ -49,6 +49,7 @@ img {
   width: 25%;
   float: left;
   padding: 15px;
+  align-self: center;
 }
 .col-4 {
   width: 33.33%;
@@ -272,7 +273,7 @@ img {
 }
 
 .btn:hover {
-  scale: 1.1;
+  scale: 1.05;
   background: linear-gradient(var(--plum), var(--banana)) padding-box,
     linear-gradient(45deg, var(--banana) 0%, var(--plum) 100%) border-box;
 }
