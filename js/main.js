@@ -72,7 +72,7 @@ function validateLoginFields() {
     }
 
     // dummy login
-    if (username != 'admin' || password != "validpass12#") {
+    if (username != 'admin' || password != "valid12#") {
         alert("Login not successful. Please check your username and/or password");
         return false;
     }
