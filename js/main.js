@@ -36,12 +36,16 @@ function validateSignupFields() {
         return false;
     }
 
+    // The username should only contain characters (alphabets).
+    // No numbers or special characters are permiTed in the username.
     const userNameRegex = /^[a-zA-Z]+$/;
     if (!userNameRegex.test(username)) {
         alert("Username should only contain characters (alphabets). No numbers or special characters are permitted in the username.")
         return false
     }
 
+    // The password should be between 6 and 10 characters in length.
+    // It must contain a mix of characters (alphabets), numbers, and specific special characters: '?' '$' '#' '@'.
     const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[?$#@])[a-zA-Z\d?$#@]{6,10}$/;
     if (!passwordRegex.test(password)) {
         alert("The password should be between 6 and 10 characters in length. It must contain a mix of characters (alphabets), numbers, and specific special characters: '?' '$' '#' '@'.")

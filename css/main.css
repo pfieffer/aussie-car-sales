@@ -258,8 +258,6 @@ img {
 
 .btn {
   display: inline-block;
-  text-decoration: none;
-  display: inline-block;
   font: var(--p);
   color: var(--light);
   background: linear-gradient(var(--dark), var(--dark)) padding-box,
