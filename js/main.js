@@ -88,6 +88,7 @@ function validateAddCarForm() {
     let year = document.getElementById("year").value;
     let milage = document.getElementById("milage").value;
     let location = document.getElementById("location").value;
+    let price = document.getElementById("price").value;
 
     if (make == '') {
         alert("Please enter the car make");
