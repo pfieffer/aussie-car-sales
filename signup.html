@@ -29,7 +29,7 @@
 
     <div class="container">
 
-        <form name="registrationForm" onsubmit="return validateSignupFields()" id="signup-form">
+        <form name="registrationForm" onsubmit="return validateSignupFields()" id="signup-form" method="POST" action="register.php" >
             <br>
             Fill up the form to register an account on Car Sales Australia and enjoy buying and listing cars for free.
 
@@ -39,7 +39,7 @@
                     <label for="name">Full Name</label>
                 </div>
                 <div class="col-70">
-                    <input type="text" id="name" name="fullname" placeholder="Your Name">
+                    <input type="text" id="name" name="fullName" placeholder="Your Name">
                 </div>
             </div>
 
@@ -84,7 +84,7 @@
                     <label for="password">Password</label>
                 </div>
                 <div class="col-70">
-                    <input type="password" id="password" name="pnumber" placeholder="Password">
+                    <input type="password" id="password" name="password" placeholder="Password">
                 </div>
             </div>
 

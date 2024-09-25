@@ -52,7 +52,7 @@ function validateSignupFields() {
         return false
     }
 
-    alert("Signup Successful");
+    // alert("Signup Successful");
     return true;
 }
 
