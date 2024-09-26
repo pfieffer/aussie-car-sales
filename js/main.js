@@ -123,7 +123,7 @@ function validateAddCarForm() {
         return false
     }
 
-    alert('Car listed successfully. 🎉');
+    // alert('Car listed successfully. 🎉');
     return true
 }
 

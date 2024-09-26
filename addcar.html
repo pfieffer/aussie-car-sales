@@ -31,7 +31,7 @@
 
     <div class="container">
 
-        <form name="addCarForm" onsubmit="return validateAddCarForm()" id="login-form">
+        <form name="addCarForm" onsubmit="return validateAddCarForm()" id="login-form" method="post" action="addcar.php">
             <h2>
                 List car for sale
             </h2>
@@ -40,7 +40,7 @@
                     <label for="make">Make</label>
                 </div>
                 <div class="col-70">
-                    <input type="text" id="make" name="make" placeholder="Toyota">
+                    <input type="text" id="make" name="make" placeholder="Toyota" required>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                     <label for="milage">Milage</label>
                 </div>
                 <div class="col-70">
-                    <input type="number" id="milage" name="milage" placeholder="12000 km">
+                    <input type="number" id="milage" name="milage" placeholder="12000">
                 </div>
             </div>
 

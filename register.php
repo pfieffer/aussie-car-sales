@@ -25,4 +25,6 @@ if ($fullName == '' || $userName == '' || $email == '' || $password == '' || $ad
 
 $conn -> close();
 
+//TODO: Redirection logic on successful registration
+
 ?>

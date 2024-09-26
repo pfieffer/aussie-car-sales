@@ -30,4 +30,6 @@ if (password_verify($password, $hashed_password)) {
 }
 
 $conn->close();
+
+// TODO: Redirection logic on successful login
 ?>
