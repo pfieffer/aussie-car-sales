@@ -17,9 +17,17 @@ if ($fullName == '' || $userName == '' || $email == '' || $password == '' || $ad
     $sql = "INSERT INTO users (full_name,username,email,password,address,phone_number)
     VALUES ('$fullName','$userName','$email','$hashed_password', '$address', '$phoneNumber')";
     if (mysqli_query($conn, $sql)) {
-        echo "<h1>Signup successful</h1>";
+
+        echo '<script type="text/javascript">
+        alert("Registration successful. Login with your username and password to continue");
+        window.location.href = "login.php";
+        </script>';
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        // echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        echo '<script type="text/javascript">
+        alert("Something went wrong. Please try again later");
+        window.location.href = "index.php";
+        </script>';
     }
 }
 

@@ -34,7 +34,7 @@ if (password_verify($password, $hashed_password)) {
 
     echo '<script type="text/javascript">
     alert("Login successful.");
-    window.location.href = "index.php"; // Redirect to the home page
+    window.location.href = "profile.php"; // Redirect to profile page
     </script>';
 } else {
     echo '<script type="text/javascript">
