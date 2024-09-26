@@ -1,35 +1,55 @@
-<?php
-include('connection.php');
+<!DOCTYPE html>
+<html>
 
-if (!isset($_POST['username'], $_POST['password'])) {
-    // Could not get the data that should have been sent.
-    exit('Please fill both the username and password fields!');
-}
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
 
-// No need to use mysqli_escape_string here, since we are using prepared statements
-$username = mysqli_escape_string($conn, $_POST['username']);
-$password = mysqli_escape_string($conn, $_POST['password']);
+<body>
+    <?php include('navbar.php') ?>
 
-$sql = "SELECT password FROM users WHERE username='$username'";
-$result = mysqli_query($conn, $sql);
+    <div class="container">
 
-if($result==false){
-    echo "Invalid username or password";
-    exit();
-}
+        <form name="loginForm" onsubmit="return validateLoginFields()" id="login-form" method="POST" action="authenticate.php">
+            <h2>
+                Login to buy and sell cars
+            </h2>
+            <div class="row">
+                <div class="col-30">
+                    <label for="username">Username</label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </div>
+            </div>
 
-$row = mysqli_fetch_row($result);
-$hashed_password = $row[0];
+            <div class="row">
+                <div class="col-30">
+                    <label for="password">Password</label>
+                </div>
+                <div class="col-70">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+            </div>
 
-// Verify the entered password with the hashed password from the database
-if (password_verify($password, $hashed_password)) {
-    echo "Login successful!";
-    // Here you can start the session and set user data as logged in
-} else {
-    echo "Invalid username or password.";
-}
+            <br>
 
-$conn->close();
+            <div class="row">
+                <input type="submit" value="Login" class="btn">
+            </div>
+        </form>
 
-// TODO: Redirection logic on successful login
-?>
+        <br>
+
+    </div>
+
+    <?php include('footer.php') ?>
+</body>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

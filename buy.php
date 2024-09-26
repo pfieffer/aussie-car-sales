@@ -10,21 +10,7 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="buy.html">Buy</a></li>
-      <li><a href="login.html">Sell</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <ul class="nav-right">
-      <li><a href="login.html">Login</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
-    </ul>
-  </nav>
+  <?php include('navbar.php'); ?>
 
   <div class="container">
     <h2>
@@ -116,25 +102,7 @@
     </div>
   </div>
 
-  <footer>
-    <p>
-      &copy 2024 Aussie Car Sales<br />
-      Contact: <a href="mailto:info@aussiecarsales.com.au">info@aussiecarsales.com.au</a>
-      <br>
-      <br>
-      Color inspiration: <a
-        href="https://www.figma.com/design/psy9I5hH6WWJzpbjzVhL0Q/Accessible-Colour-Palettes-(Community)?node-id=159-23&node-type=CANVAS&t=St9T3WZ7nOOR0G4v-0"
-        target="_blank">Accessible Color Palette</a>
-      <br>
-
-      <br>
-      Design Inspiration:<br>
-      <a href="https://www.iamsajid.com/" target="_blank">Sajid</a><br>
-      <a href="https://www.carsales.com.au/" target="_blank">Care Sales</a><br>
-      <a href="https://www.w3schools.com/" target="_blank">w3schools</a><br>
-
-    </p>
-  </footer>
+  <?php include('footer.php') ?>
 </body>
 
 <script type="text/javascript" src="js/main.js"></script>
