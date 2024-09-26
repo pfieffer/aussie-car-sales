@@ -59,7 +59,7 @@
     </div>
 
     <div class="row" style="text-align: center;">
-      <a href="buy.html" class="btn">
+      <a href="buy.php" class="btn">
         Show All
       </a>
     </div>
