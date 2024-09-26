@@ -37,9 +37,14 @@ if (password_verify($password, $hashed_password)) {
     window.location.href = "index.php"; // Redirect to the home page
     </script>';
 } else {
-    echo "Invalid username or password.";
+    echo '<script type="text/javascript">
+    alert("Invalid username and/or password.");
+    window.location.href = "login.php"; // Redirect to the home page
+    </script>';
 }
 
 $conn->close();
 
 // TODO: Redirection logic on successful login
+
+?>
