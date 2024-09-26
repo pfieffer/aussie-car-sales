@@ -57,7 +57,7 @@ function validateSignupFields() {
 }
 
 function validateLoginFields() {
-    event.preventDefault(); // prevent form submission
+    // event.preventDefault(); // prevent form submission
 
     let username = document.forms["loginForm"]["username"].value;
     let password = document.forms["loginForm"]["password"].value;
@@ -72,13 +72,13 @@ function validateLoginFields() {
     }
 
     // dummy login
-    if (username != 'admin' || password != "valid12#") {
-        alert("Login not successful. Please check your username and/or password");
-        return false;
-    }
+    // if (username != 'admin' || password != "valid12#") {
+    //     alert("Login not successful. Please check your username and/or password");
+    //     return false;
+    // }
 
-    alert("Login Successful. You can now list your car for sale");
-    window.location.href = 'addcar.html';
+    // alert("Login Successful. You can now list your car for sale");
+    // window.location.href = 'addcar.html';
     return true;
 }
 
