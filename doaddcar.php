@@ -21,8 +21,17 @@ if ($make == '' || $model == '' || $year == '' || $milage == '' || $location == 
     VALUES ('$make','$model','$year','$milage', '$location', '$price', '$user_id')";
     if (mysqli_query($conn, $sql)) {
         echo "<h1>Car listing successful</h1>";
+
+        echo '<script type="text/javascript">
+        window.location.href = "buy.php";
+        alert("Car listed successfully");
+        </script>';
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        // echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        echo '<script type="text/javascript">
+        alert("Something went wrong. Please try again later");
+        window.location.href = "index.php";
+        </script>';
     }
 }
 
