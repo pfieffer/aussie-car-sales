@@ -20,7 +20,7 @@ if ($make == '' || $model == '' || $year == '' || $milage == '' || $location == 
     $sql = "INSERT INTO cars (make,model,year,milage,location,price,user_id)
     VALUES ('$make','$model','$year','$milage', '$location', '$price', '$user_id')";
     if (mysqli_query($conn, $sql)) {
-        echo "<h1>Car listing successful</h1>";
+        // echo "<h1>Car listing successful</h1>";
 
         echo '<script type="text/javascript">
         window.location.href = "buy.php";

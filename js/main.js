@@ -129,14 +129,14 @@ function validateAddCarForm() {
 
 
 function validateSearchCarForm() {
-    let searchKeyword = document.getElementById("searchKeyword").value;
-    let location = document.getElementById("searchLocation").value
+    let model = document.getElementById("search-model").value;
+    let location = document.getElementById("search-location").value
 
-    if (searchKeyword == '' && location == '') {
-        alert("Please enter a search keyword and/or location");
+    if (model == '' && location == '') {
+        alert("Please enter model and/or location");
         return false;
     }
 
-    alert("Valid. Filter the car list based on search keyword and/or location")
+    // alert("Valid. Filter the car list based on search keyword and/or location")
     return true;
 }

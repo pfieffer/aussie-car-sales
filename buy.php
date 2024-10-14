@@ -17,20 +17,21 @@
       Search from a catalog of over 20,000 cars in Australia
     </h2>
 
-    <form name="searchCarForm">
+    <form name="searchCarForm" onsubmit="return validateSearchCarForm()" action="search.php" method="GET">
       <div class="row">
 
         <div class="col-6" style="padding-right: 48px;">
-          <input type="text" id="searchKeyword" name="searchKeyword" placeholder="Search Keyword">
+          <input type="text" id="search-model" name="search-model" placeholder="Search model">
         </div>
 
         <div class="col-3">
-          <input type="text" id="searchLocation" name="searchLocation" placeholder="Location">
+          <input type="text" id="search-location" name="search-location" placeholder="Location">
         </div>
 
         <div class="col-3">
+
           <button value="Go" class="btn" style="margin-top: 0px; padding: 8px 20px; width: 100%;"
-            onclick="return validateSearchCarForm()">Go</button>
+            onclick="return validateSearchCarForm()" type="submit">Go</button>
         </div>
       </div>
 
@@ -45,6 +46,7 @@
 
       include('connection.php');
 
+      // if()
       $sql = "SELECT * FROM cars";
       // Execute query
       $result = $conn->query($sql);
