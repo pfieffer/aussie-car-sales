@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <?php include('navbar.php') ?>
+    <?php include('include/navbar.php') ?>
 
     <div class="container">
 
@@ -47,7 +47,7 @@
 
     </div>
 
-    <?php include('footer.php') ?>
+    <?php include('include/footer.php') ?>
 </body>
 
 <script type="text/javascript" src="js/main.js"></script>

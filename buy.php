@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <?php include('navbar.php'); ?>
+  <?php include('include/navbar.php'); ?>
 
   <div class="container">
     <h2>
@@ -44,7 +44,7 @@
 
       <?php
 
-      include('connection.php');
+      include('include/connection.php');
 
       // if()
       $sql = "SELECT * FROM cars";
@@ -86,7 +86,7 @@
     </div>
   </div>
 
-  <?php include('footer.php') ?>
+  <?php include('include/footer.php') ?>
 </body>
 
 <script type="text/javascript" src="js/main.js"></script>

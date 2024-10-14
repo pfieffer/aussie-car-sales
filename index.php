@@ -11,7 +11,7 @@
 
 <body>
   <?php
-  include('navbar.php');
+  include('include/navbar.php');
   ?>
 
   <div class="hero-image">
@@ -117,7 +117,7 @@
 
   </div>
 
-  <?php include('footer.php') ?>
+  <?php include('include/footer.php') ?>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <?php
-include('connection.php');
+include('include/connection.php');
 
 if (!isset($_POST['username'], $_POST['password'])) {
     // Could not get the data that should have been sent.

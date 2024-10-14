@@ -1,6 +1,6 @@
 <?php
 
-include('connection.php');
+include('include/connection.php');
 
 $fullName = mysqli_escape_string($conn, $_POST['fullName']);
 $userName = mysqli_escape_string($conn, $_POST['username']);

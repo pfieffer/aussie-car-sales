@@ -7,7 +7,7 @@ if (!isset($_GET['search-model']) || !isset($_GET['search-location'])) {
     </script>';
 }
 
-include('connection.php');
+include('include/connection.php');
 $model = mysqli_escape_string($conn, $_GET['search-model']);
 $location = mysqli_escape_string($conn, $_GET['search-location']);
 

@@ -11,11 +11,11 @@
 
 <body>
     <?php
-    include('navbar.php');
+    include('include/navbar.php');
 
     $user_id = $_SESSION['user_id'];
 
-    include('connection.php');
+    include('include/connection.php');
     $sql = "SELECT * FROM users where id='$user_id'";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
@@ -86,7 +86,7 @@
 
 
     <?php
-    include('footer.php');
+    include('include/footer.php');
     ?>
 
 </body>
