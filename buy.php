@@ -60,12 +60,12 @@
         // Iterate through the result set using a while loop
         while ($row = $result->fetch_assoc()) {
           // Access row data
-          // echo "ID: " . $row['id'] . " - Make: " . $row['make'] . " - Model: " . $row['model'] . "<br>";
-
+          $image = $row['image'];
+          // var_dump($image);
           echo "
           <div class='col-4'>
         <div class='car-card'>
-          <img src='images/cars/mitsubishi-outlander.png' />
+          <img src='$image' />
           <h4>" . $row['year'] . " " . $row['make'] . " " . $row['model'] . "</h4>
           <h5>$" . $row['price'] . "</h5>
           <p>📍 " . $row['location'] . "</p>

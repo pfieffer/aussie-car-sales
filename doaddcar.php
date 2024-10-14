@@ -37,6 +37,4 @@ if ($make == '' || $model == '' || $year == '' || $milage == '' || $location == 
 
 $conn -> close();
 
-// TODO: Redirection logic on successful adding car
-
 ?>

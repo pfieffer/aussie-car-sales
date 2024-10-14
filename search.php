@@ -15,6 +15,7 @@ $sql = "SELECT * FROM cars WHERE model LIKE '%$model%' AND location LIKE '%$loca
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
+    // TODO: Search results display on the same page
     // output data of each row
     while ($row = mysqli_fetch_assoc($result)) {
         echo (" <tr>
@@ -28,4 +29,5 @@ if (mysqli_num_rows($result) > 0) {
     echo "0 results";
 }
 
+$conn -> close();
 ?>

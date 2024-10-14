@@ -12,7 +12,8 @@ $phoneNumber = mysqli_escape_string($conn, $_POST['phone']);
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
 if ($fullName == '' || $userName == '' || $email == '' || $password == '' || $address == '' || $phoneNumber == '') {
-    echo "<h3>Please fill in all the fields";
+        // Could not get the data that should have been sent.
+        exit('Please fill in all the fields!');
 } else {
     $sql = "INSERT INTO users (full_name,username,email,password,address,phone_number)
     VALUES ('$fullName','$userName','$email','$hashed_password', '$address', '$phoneNumber')";
@@ -32,7 +33,5 @@ if ($fullName == '' || $userName == '' || $email == '' || $password == '' || $ad
 }
 
 $conn -> close();
-
-//TODO: Redirection logic on successful registration
 
 ?>

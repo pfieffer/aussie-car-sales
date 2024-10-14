@@ -6,7 +6,6 @@ if (!isset($_POST['username'], $_POST['password'])) {
     exit('Please fill both the username and password fields!');
 }
 
-// No need to use mysqli_escape_string here, since we are using prepared statements
 $username = mysqli_escape_string($conn, $_POST['username']);
 $password = mysqli_escape_string($conn, $_POST['password']);
 
@@ -14,7 +13,10 @@ $sql = "SELECT password FROM users WHERE username='$username'";
 $result = mysqli_query($conn, $sql);
 
 if ($result == false) {
-    echo "Invalid username or password";
+    echo '<script type="text/javascript">
+    alert("Invalid username and/or password.");
+    window.location.href = "login.php"; // Redirect to the home page
+    </script>';
     exit();
 }
 
@@ -44,7 +46,5 @@ if (password_verify($password, $hashed_password)) {
 }
 
 $conn->close();
-
-// TODO: Redirection logic on successful login
 
 ?>
