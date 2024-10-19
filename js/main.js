@@ -133,7 +133,7 @@ function validateSearchCarForm() {
     let location = document.getElementById("search-location").value
 
     if (model == '' && location == '') {
-        alert("Please enter model and/or location");
+        alert("Please enter model and/or location to search");
         return false;
     }
 

@@ -17,7 +17,7 @@
       Search from a catalog of over 20,000 cars in Australia
     </h2>
 
-    <form name="searchCarForm" onsubmit="return validateSearchCarForm()" action="search.php" method="GET">
+    <form name="searchCarForm" onsubmit="return validateSearchCarForm()" action="search-results.php" method="GET">
       <div class="row">
 
         <div class="col-6" style="padding-right: 48px;">
